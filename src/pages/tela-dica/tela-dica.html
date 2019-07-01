@@ -1,0 +1,263 @@
+
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-title>Dicas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-slides pager="true" (ionSlideDidChange)="slideChanged()">
+    <!-- speed="2000" -->
+    <ion-slide>
+      <div class="slide-zoom">
+        <ion-item color="light">
+          <label>DICA 01</label>
+        </ion-item>
+        <ion-grid>
+          <ion-row style="height: 80%" align-items-center>
+            <ion-col>
+              <h2>{{ dica1 }}</h2>
+            </ion-col>
+          </ion-row>
+          <ion-row style="height: 20%" align-items-center>
+            <ion-col col-8>
+
+            </ion-col>
+            <ion-col>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+      </div>
+    </ion-slide>
+
+    <div *ngIf="!ocultar[1]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 02</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+                <h2>{{ dica2 }}</h2>
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+              <ion-col col-8>
+
+              </ion-col>
+              <ion-col>
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+    <div *ngIf="!ocultar[2]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 03</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+               
+                    <h2>{{ dica3 }}</h2>
+                 
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+              <ion-col>
+                <button *ngIf="!dbFirebase.statusDesafio[indice] && !statusSlide[2]" ion-button block (click)="abrirAlert()">Responder</button>
+                <!-- <button ion-button block (click)="abrirAlert()">Responder</button> -->
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+    <div *ngIf="!ocultar[3]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 04</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+               
+                    <h2>{{ dica4 }}</h2>
+                   
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+             <ion-col>
+             
+             
+              <button *ngIf="!dbFirebase.statusDesafio[indice] && !statusSlide[3]" ion-button block (click)="abrirAlert()">Responder</button>
+              <!-- <button ion-button block (click)="abrirAlert()">Responder</button> -->
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+    <div *ngIf="!ocultar[4]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 05</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+                <h2>{{ dica5 }}</h2>
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+             
+              <ion-col>
+                <button *ngIf="!dbFirebase.statusDesafio[indice] && !statusSlide[4]" ion-button block (click)="abrirAlert()">Responder</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+  <div *ngIf="!ocultar[5]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 06</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+               
+                    <h2>{{ dica6 }}</h2>
+                 
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+              <ion-col>
+                <button *ngIf="!dbFirebase.statusDesafio[indice] && !statusSlide[5]" ion-button block (click)="abrirAlert()">Responder</button>
+               
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+    <div *ngIf="!ocultar[6]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 07</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+               
+                    <h2>{{ dica7 }}</h2>
+                 
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+              <ion-col>
+                <button *ngIf="!dbFirebase.statusDesafio[indice] && !statusSlide[6]" ion-button block (click)="abrirAlert()">Responder</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+    <div *ngIf="!ocultar[7]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 08</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+               
+                    <h2>{{ dica8 }}</h2>
+                 
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+              <ion-col>
+                <button *ngIf="!dbFirebase.statusDesafio[indice] && !statusSlide[7]" ion-button block (click)="abrirAlert()">Responder</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+    <div *ngIf="!ocultar[8]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 09</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+               
+                    <h2>{{ dica9 }}</h2>
+                 
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+              <ion-col>
+                <button *ngIf="!dbFirebase.statusDesafio[indice] && !statusSlide[8]" ion-button block (click)="abrirAlert()">Responder</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+    </div>
+
+     <div *ngIf="!ocultar[9]">
+      <ion-slide>
+        <div class="slide-zoom">
+          <ion-item color="light">
+            <label>DICA 10</label>
+          </ion-item>
+          <ion-grid>
+            <ion-row style="height: 80%" align-items-center>
+              <ion-col>
+               
+                    <h2>{{ dica10}}</h2>
+                 
+              </ion-col>
+            </ion-row>
+            <ion-row style="height: 20%" align-items-center>
+              <ion-col>
+                <button *ngIf="!dbFirebase.statusDesafio[indice]" ion-button block (click)="abrirAlert()">Responder</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-slide>
+     
+    </div>
+
+  </ion-slides>
+
+</ion-content>

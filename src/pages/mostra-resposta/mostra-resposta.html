@@ -1,0 +1,111 @@
+<ion-content *ngIf="mostraAcerto" padding>
+
+  <ion-grid>
+    <ion-row responsive-sm>
+      <ion-col><img src="assets/imgs/APOLO_feliz.png"></ion-col>
+    </ion-row>
+
+    <ion-row responsive-sm>
+      <ion-col>
+        <h2 style="color: #32db64"> Você fez: <br /> {{ pontuacaoFeita }} pts.</h2>
+
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <button ion-button block color="light" size="large" (click)="mostraDesafios()">Voltar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-content *ngIf="!mostraAcerto" padding>
+
+  <ion-grid>
+    <ion-row responsive-sm>
+      <ion-col> <img src="assets/imgs/APOLO_triste.png">
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row responsive-sm>
+      <ion-col>
+        <h2 style="color: #f53d3d"> Não foi dessa vez! <br /> {{ pontuacaoFeita }} pts.</h2><br />
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button block color="light" size="large" (click)="mostraDesafios()">Voltar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<!-- <ion-content  *ngIf="mostraAcerto" style="background-color: #23E84D" padding>
+   
+ 
+    <ion-grid>
+      <ion-row responsive-sm>
+        <ion-col>
+          <h1>ACERTOU! </h1>
+        </ion-col>
+      </ion-row>
+      <ion-row responsive-sm>
+        <ion-col>
+          <h2> Você fez: <br /> {{ pontuacaoFeita }} pts.</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row responsive-sm>
+        <ion-col>
+         <h2>Total:  <br />{{ mostraPontuacao }} </h2>
+        </ion-col>
+      </ion-row>
+      <ion-row responsive-sm>
+        <ion-col>
+          <button ion-button block color="light" size="large" (click)="mostraDesafios()">Voltar</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content> -->
+
+<!-- <ion-content  *ngIf="!mostraAcerto" style="background-color: #EB5E4C" padding>
+  
+    <ion-grid>
+      <ion-row responsive-sm>
+        <ion-col>
+         <h1>NÃO FOI DESSA VEZ!  </h1>
+        </ion-col>
+      </ion-row>
+      <ion-row responsive-sm>
+        <ion-col>
+          <h2> Você fez: <br /> {{ pontuacaoFeita }} pts.</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row responsive-sm>
+        <ion-col>
+          <h2>Total:  <br />{{ mostraPontuacao }} </h2>
+        </ion-col>
+      </ion-row>
+      <ion-row responsive-sm>
+        <ion-col>
+          <button ion-button block color="light" size="large" (click)="mostraDesafios()">Voltar</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content> -->
+
+<!--  
+  <div *ngIf="mostraAcerto">
+        <p>Acertou!
+          {{ mostraPontuacao }}
+        </p>
+        <button ion-button block (click)="mostraDesafios()">Voltar para os desafios</button>
+      </div>
+    
+      <div *ngIf="!mostraAcerto">
+        <p>Errou!</p>
+        <button ion-button block (click)="mostraDesafios()">Voltar para os desafios</button>
+      </div>
+      -->

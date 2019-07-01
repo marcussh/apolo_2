@@ -1,0 +1,19 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Alunos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item *ngFor="let dadoaluno of dbAlunos.dados_alunos, let i = index" (click)="mostrarAluno(dadoaluno._id)"> 
+  <p [hidden]="ocultarId">{{ dadoaluno._id }}</p>
+  <h2>{{ dadoaluno.aluno }}</h2>
+  <p>Matrícula: {{ dadoaluno.matricula }}</p>
+  <ion-badge color="secondary" item-end >{{ dadoaluno.pontuacaoTotal }}</ion-badge>
+  <ion-icon name="arrow-dropright" item-end></ion-icon>
+</ion-item>
+</ion-content>

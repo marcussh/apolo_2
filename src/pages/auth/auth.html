@@ -1,0 +1,32 @@
+<ion-content padding>
+  <!-- <formulario></formulario> -->
+  <div *ngIf="!stSessao">
+
+    <ion-grid>
+      <ion-row responsive-sm>
+        <ion-col>
+          <img src="assets/imgs/APOLO.png">
+        </ion-col>
+      </ion-row>
+      <ion-row responsive-sm>
+        <ion-col>
+            <div>
+                <form novalidate [formGroup]="alunos" (ngSubmit)="entrar()">
+                  <ion-list>
+                    <ion-item>
+                      <ion-input type="text" placeholder="aluno" formControlName="aluno"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-input type="text" placeholder="matricula" formControlName="matricula"></ion-input>
+                    </ion-item>
+                  </ion-list>
+                  <button type="submit" ion-button [disabled]="alunos.invalid" block color="dark" >Entrar</button>
+                </form>
+              </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </div>
+</ion-content>
+

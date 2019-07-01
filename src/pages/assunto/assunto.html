@@ -1,0 +1,42 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col style="width: 80%"> <span id="fonte_p">{{ aluno }}</span></ion-col>
+       
+        <ion-col style="width: 20%"> 
+          <ion-badge color="primary" item-end>{{ pont }} pts</ion-badge>
+          <ion-badge color="secondary" item-end (click)="remove()">Sair</ion-badge>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  
+   
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <!-- <button [navPush]="'relatorio-page'">Relatório</button> -->
+ <span id="titulo">Selecione o desafio:</span>
+ <div>
+   <!-- <h2>Teste: {{ teste }}</h2> -->
+ <ion-item *ngFor="let dado of dbFirebase.dadosDb, let i = index"  (click)="selecionaAssunto(dado.assunto, i)" >
+  <h2><b>{{ dado.assunto }}</b></h2>
+  <label>Tema: {{ dado.tema }}</label>
+  <!-- <ion-badgecolor="primary" item-end>{{ }} pts</ion-badge> -->
+  <ion-badge color="dark" *ngIf="!dbFirebase.statusDesafio[i]" item-end primary>A fazer</ion-badge>
+  <ion-badge color="secondary" *ngIf="dbFirebase.statusDesafio[i]" item-end >Feito!</ion-badge>
+  <ion-icon name="arrow-dropright" item-end></ion-icon>
+  <!-- <label>{{ i }}</label> -->
+  <!-- <ion-badge color="secondary" *ngIf="pontuacaoGlobal.realizado[i]" item-end >Feito!</ion-badge>
+   -->
+</ion-item>
+<button ion-button block (click)="finalizar()">Finalizar</button>
+<p>{{ fim }}</p>
+<!-- <p>Pontuação: {{ pontuacaoGlobal.total }}</p> -->
+</div>
+</ion-content>

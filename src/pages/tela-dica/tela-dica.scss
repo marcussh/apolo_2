@@ -1,0 +1,73 @@
+page-tela-dica {
+
+
+
+    label {
+      color: black;
+    }
+     
+    ion-slides {
+        padding-top: 0px;
+        //border: 2px solid green;
+        //overflow-y: scroll;
+    
+        /**
+        ion-slide{
+          height: 100vh;
+          overflow-y: scroll;
+        }
+        **/
+    }
+    
+    ion-grid {
+      //border: 3px solid yellow;
+      height: 90%;
+      
+     
+    
+      ion-row {
+        //height: 50%;
+        //border: 1px solid blue;
+       
+        ion-col {
+          //border: 1px solid black;
+          position: initial !important;
+        }
+      }
+    }
+    
+    
+    
+    
+    ion-item {
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+      //border: 2px solid blueviolet;
+    
+    }
+    .item-block{
+      text-align: center;
+      font-weight: 800;
+    }
+    }
+    
+    ion-slide {
+      //border: 5px solid black;
+      padding-top: 0px;
+    }
+   
+    .slide-zoom {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+      left: 0;
+      bottom: 1%;
+      width: 100%;
+    }

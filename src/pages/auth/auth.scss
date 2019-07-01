@@ -1,0 +1,53 @@
+page-auth {
+
+  .scroll-content {
+    background: url(../assets/imgs/BG_360_640.png);
+        background-repeat: repeat-y repeat-x;
+  }
+
+    // body {
+    //     background: #ECE7EA;
+    // }
+    ion-grid {
+        
+        height: 100%;
+        
+
+        ion-row {
+          height: 100%;
+                
+          ion-col {
+          
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+        }
+      }
+
+      ion-input{
+        background-color: white;
+        font-weight: 500;
+        color: black;
+       
+      }
+      .input-cover {
+        position: static;
+      }
+
+    // #screen {
+    //     opacity: 1;
+    //     transition: opacity 0.2s;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 999;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background: #ECE7EA;
+    //     font-family: "Gameplay";
+    //   }
+
+    
+}

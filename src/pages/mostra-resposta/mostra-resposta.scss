@@ -1,0 +1,46 @@
+page-mostra-resposta {
+
+
+  .scroll-content {
+    background: url(../assets/imgs/BG_360_640.png);
+    background-repeat: repeat-y repeat-x;
+  }
+
+    body {
+      justify-content: center;
+      text-align: center;
+    }
+    
+  h1, h2 {
+      color: black;
+      justify-content: center;
+      text-align: center;
+      font-family: "luck";
+      margin: 10%;
+  }
+  
+      ion-grid {
+          //border: 3px solid yellow;
+          height: 100%;
+  
+          ion-row {
+            height: 50%;
+            //border: 1px solid blue;
+           
+            ion-col {
+             //border: 1px solid black;
+             display: flex;
+             //align-items: center;
+             justify-content: center;
+             width: 100%;
+
+             img {
+               width: 70%;
+               height: 70%;
+             }
+            }
+          }
+        }
+    
+  }
+  

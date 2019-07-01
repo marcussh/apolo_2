@@ -1,0 +1,59 @@
+page-home {
+
+  .scroll-content {
+    background: url(../assets/imgs/BG_360_640.png);
+    background-repeat: repeat-y repeat-x;
+  }
+  #item {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  ion-label {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  // .card-md p {
+  //   font-family: "gameplay";
+  //   padding: 5%;
+  //   font-size: 3rem;
+  // }
+
+  
+
+  
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      padding: 5%;
+    }
+  
+    .card-title {
+      font-family: "press_start";
+      
+      top: 36%;
+      font-size: 1em;
+      width: 100%;
+      font-weight: bold;
+      color: black;
+      letter-spacing: .3rem;
+      
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+  
+  }
+}
